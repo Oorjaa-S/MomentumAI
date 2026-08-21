@@ -1,0 +1,361 @@
+/* ===================================================================
+   MOMENTUMAI - SEMANTIC DESIGN TOKENS & THEMES
+   Exact 5 Themes: Ocean, Forest, Galaxy, Pastel, Sunset
+   =================================================================== */
+
+/* ==========================================
+   1. OCEAN (Default Root Theme)
+   Palette: #1B4050, #30B0A5, #248A82, #48CCBD, #FFFFFF
+   ========================================== */
+:root,
+[data-theme="ocean"] {
+   --theme-name: "Ocean";
+   --bg: #0e222b;
+   --background: #0e222b;
+   --surface: #14303c;
+   --surface-secondary: #1B4050;
+   --surface-hover: #224a5b;
+   --surface-input: #1a4050;
+
+   --primary: #30B0A5;
+   --primary-hover: #48CCBD;
+   --secondary: #248A82;
+   --secondary-hover: #2daaa0;
+   --accent: #48CCBD;
+   --accent-alt: #30B0A5;
+   --accent-strong: #30B0A5;
+   --warning: #48CCBD;
+   --highlight: #FFFFFF;
+   --soft: #48CCBD;
+
+   --brand-color: #30B0A5;
+   --brand-subtitle: #48CCBD;
+   --nav-active-bar: #30B0A5;
+   --checkbox-color: #30B0A5;
+   --action-icon-color: #48CCBD;
+   --twin-pulse: #48CCBD;
+
+   --stat-1-color: #30B0A5;
+   --stat-2-color: #48CCBD;
+   --stat-3-color: #FFFFFF;
+   --stat-4-color: #248A82;
+
+   --ai-daily-color: #30B0A5;
+   --ai-prioritize-color: #48CCBD;
+   --ai-roadmap-color: #248A82;
+
+   --badge-priority: #30B0A5;
+   --badge-priority-text: #0e222b;
+   --badge-completion: #48CCBD;
+   --progress-fill: #48CCBD;
+
+   --text: #FFFFFF;
+   --text-muted: #9bc7c4;
+   --text-subtle: #79a8a5;
+   --border: rgba(48, 176, 165, 0.28);
+   --border-focus: #48CCBD;
+   --button-bg: #30B0A5;
+   --button-text: #0e222b;
+   --button-secondary-bg: #1B4050;
+   --button-secondary-text: #48CCBD;
+   --button-tertiary-bg: #248A82;
+   --button-tertiary-text: #FFFFFF;
+   --success: #48CCBD;
+   --success-text: #0e222b;
+   --danger: #248A82;
+   --hover: rgba(48, 176, 165, 0.16);
+   --card-shadow: 0 8px 24px rgba(14, 34, 43, 0.5);
+
+   /* Exact Palette Swatches */
+   --palette-1: #1B4050;
+   --palette-2: #30B0A5;
+   --palette-3: #248A82;
+   --palette-4: #48CCBD;
+   --palette-5: #FFFFFF;
+}
+
+/* ==========================================
+   2. FOREST
+   Palette: #1B676B, #519548, #88C425, #BEF202, #EAFDE6
+   ========================================== */
+[data-theme="forest"] {
+   --theme-name: "Forest";
+   --bg: #0d2325;
+   --background: #0d2325;
+   --surface: #143639;
+   --surface-secondary: #1B676B;
+   --surface-hover: #224d50;
+   --surface-input: #1a4548;
+
+   --primary: #519548;
+   --primary-hover: #61ac56;
+   --secondary: #1B676B;
+   --secondary-hover: #238489;
+   --accent: #88C425;
+   --accent-alt: #BEF202;
+   --accent-strong: #88C425;
+   --warning: #BEF202;
+   --highlight: #EAFDE6;
+   --soft: #BEF202;
+
+   --brand-color: #519548;
+   --brand-subtitle: #88C425;
+   --nav-active-bar: #519548;
+   --checkbox-color: #88C425;
+   --action-icon-color: #88C425;
+   --twin-pulse: #BEF202;
+
+   --stat-1-color: #88C425;
+   --stat-2-color: #519548;
+   --stat-3-color: #BEF202;
+   --stat-4-color: #EAFDE6;
+
+   --ai-daily-color: #519548;
+   --ai-prioritize-color: #88C425;
+   --ai-roadmap-color: #BEF202;
+
+   --badge-priority: #88C425;
+   --badge-priority-text: #0d2325;
+   --badge-completion: #BEF202;
+   --progress-fill: #88C425;
+
+   --text: #EAFDE6;
+   --text-muted: #a8d8a3;
+   --text-subtle: #7fb87a;
+   --border: rgba(81, 149, 72, 0.32);
+   --border-focus: #88C425;
+   --button-bg: #519548;
+   --button-text: #EAFDE6;
+   --button-secondary-bg: #1B676B;
+   --button-secondary-text: #BEF202;
+   --button-tertiary-bg: #88C425;
+   --button-tertiary-text: #0d2325;
+   --success: #88C425;
+   --success-text: #0d2325;
+   --danger: #BEF202;
+   --hover: rgba(136, 196, 37, 0.16);
+   --card-shadow: 0 8px 24px rgba(13, 35, 37, 0.5);
+
+   /* Exact Palette Swatches */
+   --palette-1: #1B676B;
+   --palette-2: #519548;
+   --palette-3: #88C425;
+   --palette-4: #BEF202;
+   --palette-5: #EAFDE6;
+}
+
+/* ==========================================
+   3. GALAXY
+   Palette: #0D0D0D, #1A1A2E, #16213E, #0F3460, #E94560
+   ========================================== */
+[data-theme="galaxy"] {
+   --theme-name: "Galaxy";
+   --bg: #0D0D0D;
+   --background: #0D0D0D;
+   --surface: #1A1A2E;
+   --surface-secondary: #16213E;
+   --surface-hover: #242c54;
+   --surface-input: #1a2245;
+
+   --primary: #E94560;
+   --primary-hover: #ff5e78;
+   --secondary: #0F3460;
+   --secondary-hover: #174a87;
+   --accent: #E94560;
+   --accent-alt: #0F3460;
+   --accent-strong: #E94560;
+   --warning: #E94560;
+   --highlight: #E94560;
+   --soft: #E94560;
+
+   --brand-color: #E94560;
+   --brand-subtitle: #9aa5b8;
+   --nav-active-bar: #E94560;
+   --checkbox-color: #E94560;
+   --action-icon-color: #E94560;
+   --twin-pulse: #E94560;
+
+   --stat-1-color: #E94560;
+   --stat-2-color: #0F3460;
+   --stat-3-color: #E94560;
+   --stat-4-color: #16213E;
+
+   --ai-daily-color: #E94560;
+   --ai-prioritize-color: #0F3460;
+   --ai-roadmap-color: #E94560;
+
+   --badge-priority: #E94560;
+   --badge-priority-text: #ffffff;
+   --badge-completion: #E94560;
+   --progress-fill: #E94560;
+
+   --text: #ffffff;
+   --text-muted: #9aa5b8;
+   --text-subtle: #798599;
+   --border: rgba(15, 52, 96, 0.7);
+   --border-focus: #E94560;
+   --button-bg: #E94560;
+   --button-text: #ffffff;
+   --button-secondary-bg: #0F3460;
+   --button-secondary-text: #ffffff;
+   --button-tertiary-bg: #16213E;
+   --button-tertiary-text: #ffffff;
+   --success: #E94560;
+   --success-text: #ffffff;
+   --danger: #E94560;
+   --hover: rgba(233, 69, 96, 0.18);
+   --card-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+
+   /* Exact Palette Swatches */
+   --palette-1: #0D0D0D;
+   --palette-2: #1A1A2E;
+   --palette-3: #16213E;
+   --palette-4: #0F3460;
+   --palette-5: #E94560;
+}
+
+/* ==========================================
+   4. PASTEL (High-Contrast Black Text)
+   Palette: #FFC8DD, #FFAFCC, #BDE0FE, #A2D2FF
+   ========================================== */
+[data-theme="pastel"] {
+   --theme-name: "Pastel";
+   --bg: #f5edf3;
+   --background: #f5edf3;
+   --surface: #ffffff;
+   --surface-secondary: #FFC8DD;
+   --surface-hover: #ffd9e7;
+   --surface-input: #ffffff;
+
+   --primary: #FFAFCC;
+   --primary-hover: #f395b7;
+   --secondary: #A2D2FF;
+   --secondary-hover: #88c2fa;
+   --accent: #BDE0FE;
+   --accent-alt: #FFC8DD;
+   --accent-strong: #FFAFCC;
+   --warning: #FFAFCC;
+   --highlight: #A2D2FF;
+   --soft: #BDE0FE;
+
+   --brand-color: #FFAFCC;
+   --brand-subtitle: #2c1f30;
+   --nav-active-bar: #FFAFCC;
+   --checkbox-color: #FFAFCC;
+   --action-icon-color: #2c1f30;
+   --twin-pulse: #FFAFCC;
+
+   --stat-1-color: #FFAFCC;
+   --stat-2-color: #A2D2FF;
+   --stat-3-color: #BDE0FE;
+   --stat-4-color: #FFC8DD;
+
+   --ai-daily-color: #FFAFCC;
+   --ai-prioritize-color: #A2D2FF;
+   --ai-roadmap-color: #BDE0FE;
+
+   --badge-priority: #FFAFCC;
+   --badge-priority-text: #111111;
+   --badge-completion: #A2D2FF;
+   --progress-fill: #A2D2FF;
+
+   --text: #111111;
+   --text-muted: #444444;
+   --text-subtle: #666666;
+   --border: #FFAFCC;
+   --border-focus: #A2D2FF;
+   --button-bg: #FFAFCC;
+   --button-text: #111111;
+   --button-secondary-bg: #A2D2FF;
+   --button-secondary-text: #111111;
+   --button-tertiary-bg: #BDE0FE;
+   --button-tertiary-text: #111111;
+   --success: #A2D2FF;
+   --success-text: #111111;
+   --danger: #FFAFCC;
+   --hover: rgba(255, 175, 204, 0.3);
+   --card-shadow: 0 8px 24px rgba(184, 138, 168, 0.18);
+
+   /* Exact Palette Swatches */
+   --palette-1: #FFC8DD;
+   --palette-2: #FFAFCC;
+   --palette-3: #BDE0FE;
+   --palette-4: #A2D2FF;
+}
+
+/* ==========================================
+   5. SUNSET (Vivid 5-Color Diagonal Gradient Background)
+   Palette: #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871
+   Gradient: #D65DB1 -> #FF6F91 -> #FF9671 -> #FFC75F -> #F9F871
+   ========================================== */
+[data-theme="sunset"] {
+   --theme-name: "Sunset";
+   --bg: linear-gradient(135deg, #D65DB1 0%, #FF6F91 25%, #FF9671 50%, #FFC75F 75%, #F9F871 100%);
+   --background: linear-gradient(135deg, #D65DB1 0%, #FF6F91 25%, #FF9671 50%, #FFC75F 75%, #F9F871 100%);
+   --surface: #FFFDF7;
+   --surface-secondary: #FFF5DE;
+   --surface-hover: #FFEDC4;
+   --surface-input: #FFFFFF;
+
+   /* Primary Accent: #FF6F91 (Buttons, Checkboxes, Active Navigation) */
+   --primary: #FF6F91;
+   --primary-hover: #ff557e;
+   --button-bg: #FF6F91;
+   --button-text: #FFFFFF;
+   --nav-active-bar: #FF6F91;
+   --checkbox-color: #FF6F91;
+   --ai-daily-color: #FF6F91;
+   --stat-2-color: #FF6F91;
+   --progress-fill: #FF6F91;
+
+   /* Secondary Accent: #FF9671 (Secondary Buttons, Progress, Accents) */
+   --secondary: #FF9671;
+   --secondary-hover: #ff855f;
+   --accent: #FF9671;
+   --accent-alt: #FF9671;
+   --button-secondary-bg: #FFF5DE;
+   --button-secondary-text: #1A1208;
+   --button-tertiary-bg: #FF9671;
+   --button-tertiary-text: #1A1208;
+   --stat-1-color: #FF9671;
+   --badge-priority: #FF9671;
+   --badge-priority-text: #1A1208;
+   --ai-prioritize-color: #FF9671;
+
+   /* Strong Accent: #D65DB1 (AI, Brand Logo, Special Emphasis) */
+   --accent-strong: #D65DB1;
+   --brand-color: #D65DB1;
+   --brand-subtitle: #1A1208;
+   --ai-roadmap-color: #D65DB1;
+   --stat-3-color: #D65DB1;
+   --stat-4-color: #D65DB1;
+   --twin-pulse: #FF6F91;
+
+   /* Highlights & Success: #F9F871 */
+   --highlight: #F9F871;
+   --soft: #F9F871;
+   --success: #F9F871;
+   --success-text: #1A1208;
+   --badge-completion: #F9F871;
+   --warning: #FF9671;
+   --danger: #FF6F91;
+
+   /* Typography: High-Contrast Dark on Light Surfaces */
+   --text: #1A1208;
+   --text-muted: #614F3B;
+   --text-subtle: #857059;
+   --action-icon-color: #614F3B;
+
+   /* Subtle Borders & Soft Ambient Shadows */
+   --border: rgba(200, 140, 40, 0.22);
+   --border-focus: #FF6F91;
+   --hover: rgba(255, 111, 145, 0.12);
+   --card-shadow: 0 6px 20px rgba(180, 120, 20, 0.14);
+
+   /* Exact 5-Color Official Palette Swatches */
+   --palette-1: #D65DB1;
+   --palette-2: #FF6F91;
+   --palette-3: #FF9671;
+   --palette-4: #FFC75F;
+   --palette-5: #F9F871;
+}

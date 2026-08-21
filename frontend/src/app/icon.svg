@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="ai-grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30B0A5" />
+      <stop offset="100%" stop-color="#48CCBD" />
+    </linearGradient>
+    <linearGradient id="ai-grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6F91" />
+      <stop offset="100%" stop-color="#FF9671" />
+    </linearGradient>
+  </defs>
+  <!-- App Icon Base -->
+  <rect width="32" height="32" rx="7.5" fill="#0C171F" />
+  <rect width="30" height="30" x="1" y="1" rx="6.5" fill="none" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1" />
+  
+  <!-- MomentumAI Symbol: Intersecting Kinetic Spark & Task Hierarchy Core -->
+  <path d="M17.5 5L8.5 17.5H15.5L14.5 27L23.5 14.5H16.5L17.5 5Z" fill="url(#ai-grad-primary)" />
+  <circle cx="23.5" cy="8.5" r="2.5" fill="url(#ai-grad-accent)" />
+</svg>

@@ -1,0 +1,329 @@
+/* ===================================================================
+   AI PLANNER VIEW STYLES - DEDICATED AI COMMAND CENTER
+   =================================================================== */
+
+.planner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Header & Capacity Bar */
+.planner-header-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: var(--card-shadow);
+}
+
+.planner-header-info h2 {
+  font-family: var(--font-nunito-fallback);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.planner-header-info p {
+  font-family: var(--font-lora-fallback);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.planner-capacity-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--surface-secondary);
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.capacity-slider {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.capacity-value-label {
+  font-family: var(--font-nunito-fallback);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary);
+  min-width: 60px;
+}
+
+/* AI Quick Action Strip */
+.ai-actions-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ai-action-card-btn {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.2s ease;
+  color: var(--text);
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.ai-action-card-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  background-color: var(--surface-hover);
+}
+
+.ai-action-card-btn.active {
+  border-color: var(--primary);
+  background-color: var(--surface-secondary);
+}
+
+.ai-action-1 { border-top: 3px solid var(--ai-daily-color, var(--primary)); }
+.ai-action-2 { border-top: 3px solid var(--ai-prioritize-color, var(--secondary)); }
+.ai-action-3 { border-top: 3px solid var(--accent-strong, var(--primary)); }
+.ai-action-4 { border-top: 3px solid var(--ai-roadmap-color, var(--accent)); }
+
+.ai-action-title {
+  font-family: var(--font-nunito-fallback);
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+
+.ai-action-desc {
+  font-family: var(--font-lora-fallback);
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Planner Main Display Area */
+.planner-workspace-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.planner-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.planner-section-header h3 {
+  font-family: var(--font-nunito-fallback);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.capacity-summary-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-nunito-fallback);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  background-color: var(--surface-secondary);
+  border-radius: 8px;
+}
+
+/* Scheduled Plan List */
+.scheduled-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-item-card {
+  background-color: var(--surface-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: all 0.18s ease;
+}
+
+.plan-item-card:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--primary);
+}
+
+.plan-rank-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--button-text, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-nunito-fallback);
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.plan-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.plan-item-title {
+  font-family: var(--font-nunito-fallback);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.plan-item-reason {
+  font-family: var(--font-lora-fallback);
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.plan-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--accent);
+  font-family: var(--font-nunito-fallback);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* Priority Tiers Groups */
+.priority-tier-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tier-header-badge {
+  font-family: var(--font-nunito-fallback);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.tier-p1 { background-color: var(--primary); color: #ffffff; }
+.tier-p2 { background-color: var(--secondary); color: #111111; }
+.tier-p3 { background-color: var(--accent); color: #111111; }
+.tier-p4 { background-color: var(--surface-secondary); color: var(--text); border: 1px solid var(--border); }
+
+/* Next Best Task Hero Card */
+.next-task-hero-card {
+  background: var(--surface-secondary);
+  border: 2px solid var(--primary);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+
+.next-task-hero-title {
+  font-family: var(--font-nunito-fallback);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.next-task-kickoff-box {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.next-task-kickoff-box span {
+  font-family: var(--font-nunito-fallback);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.next-task-kickoff-box p {
+  font-family: var(--font-lora-fallback);
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .ai-actions-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .ai-actions-strip {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .planner-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

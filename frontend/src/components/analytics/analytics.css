@@ -1,0 +1,185 @@
+/* ===================================================================
+   ANALYTICS VIEW STYLES - PRODUCTIVITY TELEMETRY & INSIGHTS
+   =================================================================== */
+
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Metric Strip */
+.analytics-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.analytics-kpi-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.analytics-kpi-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--surface-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.analytics-kpi-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.analytics-kpi-label {
+  font-family: var(--font-nunito-fallback);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.analytics-kpi-value {
+  font-family: var(--font-nunito-fallback);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.analytics-kpi-sub {
+  font-family: var(--font-lora-fallback);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* 2-Column Analytics Sections */
+.analytics-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.analytics-section-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.analytics-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.analytics-card-header h3 {
+  font-family: var(--font-nunito-fallback);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Distribution Bars */
+.distribution-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.distribution-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dist-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-nunito-fallback);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dist-bar-track {
+  height: 8px;
+  background-color: var(--surface-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dist-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+/* Digital Twin Telemetry Summary Card */
+.telemetry-summary-box {
+  background-color: var(--surface-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.telemetry-summary-box p {
+  font-family: var(--font-lora-fallback);
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+@media (max-width: 1024px) {
+  .analytics-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .analytics-main-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .analytics-metrics-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

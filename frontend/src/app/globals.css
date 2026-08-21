@@ -1,0 +1,144 @@
+@import './themes.css';
+
+:root {
+  --font-nunito-fallback: var(--font-nunito, 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+  --font-lora-fallback: var(--font-lora, 'Lora', Georgia, Cambria, 'Times New Roman', serif);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: var(--font-nunito-fallback);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+  background-attachment: fixed;
+  font-family: var(--font-nunito-fallback);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===================================================================
+   TYPOGRAPHY PAIRING SPECIFICATION
+   Nunito = Headings, UI text, buttons, labels, navigation, task titles, badges, form elements
+   Lora = Body copy, descriptions, notes, longer text/content
+   =================================================================== */
+
+/* --- NUNITO (Headings & Titles) --- */
+h1,
+.hero-title,
+.page-title {
+  font-family: var(--font-nunito-fallback);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2,
+.section-heading {
+  font-family: var(--font-nunito-fallback);
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+h3,
+h4,
+.card-title,
+.task-title {
+  font-family: var(--font-nunito-fallback);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* --- NUNITO (UI Controls, Buttons, Labels, Badges, Inputs, Navigation) --- */
+button,
+.btn,
+.button,
+.theme-card-btn,
+.theme-card-title {
+  font-family: var(--font-nunito-fallback);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+label,
+.form-label,
+.muted-label {
+  font-family: var(--font-nunito-fallback);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-nunito-fallback);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.badge,
+.tag,
+.chip,
+.task-badge,
+.active-indicator,
+.current-badge,
+.completed-badge {
+  font-family: var(--font-nunito-fallback);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.nav-link,
+.nav-item,
+.navbar li {
+  font-family: var(--font-nunito-fallback);
+  font-weight: 700;
+}
+
+/* --- LORA (Body copy, descriptions, notes, longer content) --- */
+p,
+.body-text,
+.description,
+.note,
+.content-text,
+.muted-text {
+  font-family: var(--font-lora-fallback);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.task-meta {
+  font-family: var(--font-nunito-fallback);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Base branding utility */
+.app-brand-image {
+  max-width: 100%;
+  height: auto;
+}
